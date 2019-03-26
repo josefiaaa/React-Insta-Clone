@@ -1,0 +1,15 @@
+.postSpacer{
+    display: flex;
+    justify-content: center;
+}
+
+.postHeader {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user-logo {
+    width: 40px;
+    border-radius: 50%;
+}
