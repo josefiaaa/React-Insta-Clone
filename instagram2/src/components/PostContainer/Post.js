@@ -2,6 +2,7 @@ import React from 'react';
 
 import './profile.css'
 import CommentSection from '../CommentSection/CommentSection';
+import AddComment from '../CommentSection/AddComment';
 
 const Post = props => {
     console.log(props);
@@ -28,6 +29,9 @@ const Post = props => {
                             <CommentSection 
                                 comments={user.comments}
                             />
+
+                            <AddComment />
+
                         </div>
                     </div>
                 </div>
@@ -35,8 +39,5 @@ const Post = props => {
         </div>
     )
 }
-
-// {this.state.dummyData.map((post, index) => (
-//     <Post key={index} post={post} />
 
 export default Post;

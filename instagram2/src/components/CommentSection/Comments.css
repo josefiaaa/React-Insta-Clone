@@ -7,3 +7,17 @@
 .usersName{
     padding-right: 10px;
 }
+
+.commentCont {
+    width: 95%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 13px;
+}
+
+.commentInput{
+    width: 99%;
+    margin-left: 0px;
+    height: 43px;
+    border: none;
+    text-align: start;
+}

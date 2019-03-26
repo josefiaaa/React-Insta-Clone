@@ -1,11 +1,12 @@
 import React from 'react';
 
-import Icon from '../SearchBar/icon.png';
 
 const IconContainer = () => {
     return(
         <div className='iconCont'>
-            <img src={Icon} alt='icons' />
+            <i className="far fa-compass"></i>
+            <i className="far fa-heart"></i>
+            <i className="far fa-user"></i>
         </div>
     );
 }

@@ -6,7 +6,7 @@ const CommentSection = props => {
     console.log(props)
     return (
     
-        <div>
+        <div className='commentCont'>
             {props.comments.map((comment, index) => 
                 <Comment key={index} username={comment.username} text={comment.text} />
             )}
