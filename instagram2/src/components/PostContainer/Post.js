@@ -14,14 +14,22 @@ const Post = props => {
                             <div className="user-logo-cont">
                                 <img className='user-logo' src={user.thumbnailUrl} alt='profile' />    
                             </div>
-                            <h3>{user.username}</h3>
+                            <p className='user'>{user.username}</p>
                         </div>
                         <img className ="post-image" src={user.imageUrl} alt={user.timestamp}/>
-                        <h4>{user.likes} likes</h4>                        
+                        <div className="bottomCont">
+                            <div className="icons">
+                            <i className="far fa-heart"></i>
+                            <i className="far fa-comment"></i>
+                            </div>
+
+                            <h4>{user.likes} likes</h4>                        
+                        
+                            <CommentSection 
+                                comments={user.comments}
+                            />
+                        </div>
                     </div>
-                    <CommentSection 
-                         
-                    />
                 </div>
             )}
         </div>

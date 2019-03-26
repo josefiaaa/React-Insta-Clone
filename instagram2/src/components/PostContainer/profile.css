@@ -3,13 +3,43 @@
     justify-content: center;
 }
 
+.postCont{
+    border: 1px solid lightgray;
+    border-radius: 1%;
+    margin: 60px 0px;
+    padding-bottom: 30px;
+}
+
 .postHeader {
     display: flex;
     align-items: center;
     margin-top: 20px;
 }
 
+.user-logo-cont{
+    margin: 10px;
+}
+
 .user-logo {
     width: 40px;
     border-radius: 50%;
+}
+
+.user{
+    font-weight: 500;
+}
+
+.bottomCont{
+    text-align: start;
+    margin-left: 18px;
+}
+
+.icons{
+    height: 26px;
+    margin: 13px 0px;
+    font-size: 26px;
+}
+
+i.far.fa-heart{
+    width: 45px
 }
