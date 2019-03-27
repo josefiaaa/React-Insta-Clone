@@ -12,8 +12,6 @@ class AddComment extends React.Component {
             comments: [],
             commentText: '',
         };
-
-        
     }
 
     componentDidMount() {
@@ -34,21 +32,18 @@ class AddComment extends React.Component {
         const newComment = {
             id: Date.now(),
             usename: 'josefiaaa',
-            text: this.state.commentText.toString(),
+            text: this.state.commentText,
         }; 
         
-        const com = this.props.comments.slice();
+        const com = this.state.comments.slice();
 
         com.push(newComment);
 
         this.setState({ 
-            com, newComment: '',
-        });
-
-        this.setState ({
+            com: [this.state.comments, newComment], 
             commentText: '',
-        })
-        
+        });
+ 
     }
 
     
@@ -60,7 +55,7 @@ class AddComment extends React.Component {
                     <input
                     className='commentInput'
                     type='text'
-                    value={this.state.commments}
+                    value={this.state.commentText}
                     placeholder= 'Add a comment...'
                     onChange={this.handleChange}
                     >
