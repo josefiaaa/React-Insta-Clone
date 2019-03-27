@@ -1,0 +1,45 @@
+.header{
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.spacer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.left{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.logoCont{
+    padding: 0px 20px;
+    border-right: 1px solid;
+}
+
+.logoIMG {
+    width: 30px;
+}
+
+.logoName {
+    font-family: cursive;
+    padding: 0px 20px;
+    font-size: 1.5rem;
+}
+
+input {
+    text-align: center;
+    width: 200px;
+}
+
+.iconCont{
+    font-size: 22px;
+    width: 22%;
+    display: flex;
+    justify-content: space-evenly;
+}
