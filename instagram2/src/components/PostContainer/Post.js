@@ -5,7 +5,7 @@ import CommentSection from '../CommentSection/CommentSection';
 import AddComment from '../CommentSection/AddComment';
 
 const Post = props => {
-    console.log(props);
+    // console.log(props);
     return (
         <div>
             {props.profile.map(user => 
@@ -27,11 +27,14 @@ const Post = props => {
                             <h4>{user.likes} likes</h4>                        
                         
                             <CommentSection 
-                                comments={user.comments}
+                              comments={user.comments}
+                            
                             />
 
-                            <AddComment />
-
+                            <AddComment  
+                                comments={user.comments}
+                                
+                            />
                         </div>
                     </div>
                 </div>

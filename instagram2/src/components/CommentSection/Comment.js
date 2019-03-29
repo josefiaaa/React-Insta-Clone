@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import './Comments.css';
 
 const Comment = props => {
-    console.log(props);
+    // console.log(props);
     return (
         <div className="comment">
             <h4 className='usersName' >{props.username}</h4> 
