@@ -28,13 +28,13 @@ const Post = props => {
                         
                             <CommentSection 
                               comments={user.comments}
+                            
                             />
 
                             <AddComment  
                                 comments={user.comments}
-                                handleSubmit={props.handleSubmit}
+                                
                             />
-
                         </div>
                     </div>
                 </div>

@@ -4,68 +4,25 @@ import './Comments.css';
 
 
 
-class AddComment extends React.Component {
-    constructor (props){
-        super(props);
-
-        this.state = {
-            comments: [],
-            commentText: '',
-        };
-    }
-
-    componentDidMount() {
-        this.setState({
-            comments: this.props.comments,
-        })
-    }
-
-    handleChange = event => {
-        event.preventDefault();
-        this.setState({
-            commentText: event.target.value,
-        })
-    }
-
-    handleSubmit = event => {
-        event.preventDefault();
-        const newComment = {
-            id: Date.now(),
-            usename: 'josefiaaa',
-            text: this.state.commentText,
-        }; 
-        
-        const com = this.state.comments.slice();
-
-        com.push(newComment);
-
-        this.setState({ 
-            com: [this.state.comments, newComment], 
-            commentText: '',
-        });
- 
-    }
-
+const AddComment = props => {
     
-    render() {
-        
-        return (
-            <div className='commentForm'>
-                <form onSubmit={this.handleSubmit}>
-                    <input
-                    className='commentInput'
-                    type='text'
-                    value={this.state.commentText}
-                    placeholder= 'Add a comment...'
-                    onChange={this.handleChange}
-                    >
+    return (
+        <div className='commentForm'>
+            <form onSubmit={props.handleSubmit}>
+                <input
+                className='commentInput'
+                type='text'
+                value={props.commentText}
+                placeholder= 'Add a comment...'
+                onChange={props.handleChange}
+                >
 
-                    </input>
-                </form>
+                </input>
+            </form>
 
-            </div>
-        )
-    }
+        </div>
+    )
+    
 }
 
 export default AddComment;
